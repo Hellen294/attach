@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDXFJ4w7WfQq2Yz99R-k29fXG2VFnpVuAcQ&s') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    background: #61dafb;
+    color: #282c34;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services {
+    padding: 40px 20px;
+}
+
+.service {
+    background: pink;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service li {
+    padding: 10px 0;
+}
+
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+    width: 100%;
+    background-color: #E0FFFF;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact .btn {
+    background: #61dafb;
+    color: #282c34;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+footer {
+    background: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
