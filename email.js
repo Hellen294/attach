@@ -1,5 +1,5 @@
 // Initialize EmailJS with your User ID (get it from EmailJS)
-emailjs.init("YOUR_USER_ID");
+emailjs.init("NH7GD7-O8VKuKcfab");
 
 function sendEmail() {
     // Get form values
@@ -17,7 +17,7 @@ function sendEmail() {
     };
 
     // Send email
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    emailjs.send('service_eyit9e9', 'template_7gfx3ty', templateParams)
         .then((response) => {
             alert('Email sent successfully!');
         }, (error) => {
