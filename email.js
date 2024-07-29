@@ -10,6 +10,9 @@ function sendEmail() {
     const subject = encodeURIComponent("MathCloud-Tech. Subscription");
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nProject Details: ${projectDetails}\n\nPlease remember that payment must be made before the commencement of work. Thank you!`);
 
+    // Debugging output
+    console.log(`mailto:${email}?subject=${subject}&body=${body}`);
+
     // Redirect to email client with the message
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 }
