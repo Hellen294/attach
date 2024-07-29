@@ -11,17 +11,150 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1e90ff;
+        }
+        .hero {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDXFJ4w7WfQq2Yz99R-k29fXG2VFnpVuAcQ&s') no-repeat center center/cover;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            min-height: 300px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            animation: fadeInLeft 2s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            animation: fadeInRight 2s ease-in-out;
+        }
+        .btn {
+            display: inline-block;
+            background: #1e90ff;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        .btn:hover {
+            background: #4169e1;
+        }
+        .about, .website-types {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about {
+            background: #f4f4f4;
+        }
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .website-types {
+            background: #fff;
+        }
+        .website-types h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .website-types ul {
+            list-style: none;
+            padding: 0;
+        }
+        .website-types li {
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 1.1rem;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <img src="logo.jpg" alt="MathCloud-Tech Logo" class="logo animate__animated animate__fadeIn">
-            <h1 class="animate__animated animate__fadeInUp">MathCloud-Tech</h1>
-            <p class="animate__animated animate__fadeInUp">Your Partner in Web Development, Design & SEO</p>
+            <h1 class="animate__animated animate__fadeIn">MathCloud-Tech</h1>
+            <p class="animate__animated animate__fadeIn">Your Partner in Web Development, Design & SEO</p>
             <nav>
-                <a href="https://www.ufokabasi.xyz/index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html" class="animate__animated animate__fadeIn">Home</a>
+                <a href="services.html" class="animate__animated animate__fadeIn">Services</a>
+                <a href="contact.html" class="animate__animated animate__fadeIn">Contact</a>
             </nav>
         </div>
     </header>
@@ -30,6 +163,20 @@
             <h2 class="animate__animated animate__fadeInLeft">Transforming Ideas into Reality</h2>
             <p class="animate__animated animate__fadeInRight">We specialize in creating stunning websites that drive results. Let us help you build your online presence.</p>
             <a href="services.html" class="btn animate__animated animate__fadeInUp">Explore Our Services</a>
+        </div>
+    </section>
+    <section class="website-types">
+        <div class="container">
+            <h2>Types of Websites We Create</h2>
+            <ul>
+                <li>Student Website</li>
+                <li>Private Website</li>
+                <li>Personal Website</li>
+                <li>Business Website</li>
+                <li>Banking Website</li>
+                <li>School Website</li>
+                <li>And more...</li>
+            </ul>
         </div>
     </section>
     <section class="about">
