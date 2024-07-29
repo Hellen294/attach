@@ -1,4 +1,6 @@
-// Function to send email
+// Initialize EmailJS with your User ID (get it from EmailJS)
+emailjs.init("YOUR_USER_ID");
+
 function sendEmail() {
     // Get form values
     const name = document.getElementById('name').value;
@@ -6,15 +8,22 @@ function sendEmail() {
     const phoneNumber = document.getElementById('phone-number').value;
     const projectDetails = document.getElementById('project-details').value;
 
-    // Construct the email content
-    const subject = encodeURIComponent("MathCloud-Tech. Subscription");
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nProject Details: ${projectDetails}\n\nPlease remember that payment must be made before the commencement of work. Thank you!`);
+    // EmailJS template parameters
+    const templateParams = {
+        from_name: name,
+        from_email: email,
+        phone_number: phoneNumber,
+        project_details: projectDetails,
+    };
 
-    // Debugging output
-    console.log(`mailto:${email}?subject=${subject}&body=${body}`);
-
-    // Redirect to email client with the message
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    // Send email
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then((response) => {
+            alert('Email sent successfully!');
+        }, (error) => {
+            alert('Failed to send email. Please try again later.');
+            console.error('Error sending email:', error);
+        });
 }
 
 // Attach event listener to email button
