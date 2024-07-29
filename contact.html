@@ -9,14 +9,8 @@
     <title>MathCloud-Tech | Contact Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function(){
-            emailjs.init("NH7GD7-O8VKuKcfab");
-        })();
-    </script>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="script2.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,26 +24,27 @@
             </nav>
         </div>
     </header>
-    <section class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>If you have any questions or would like to discuss your project, please feel free to reach out to us. We're here to help!</p>
-            <form id="contact-form" class="animate__animated animate__fadeInUp">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
+    <section class="form-container">
+        <h2>MathCloud-Tech. Subscription form</h2>
+        <form id="subscription-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" required>
+            </div>
+            <div class="form-group">
+                <label for="project-details">Project Details:</label>
+                <textarea id="project-details" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send to WhatsApp</button>
+        </form>
     </section>
     <footer>
         <div class="container">
