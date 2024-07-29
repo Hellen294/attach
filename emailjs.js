@@ -1,4 +1,4 @@
-// Initialize EmailJS with your User ID (get it from EmailJS)
+// Initialize EmailJS with your User ID
 emailjs.init("NH7GD7-O8VKuKcfab");
 
 function sendEmail() {
